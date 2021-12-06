@@ -22,7 +22,7 @@ img {
   height: auto;
 }
 
-.main__header {
+.header-img {
   background-image: url("/images/mobile/image-header.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
