@@ -19,7 +19,19 @@ img {
   height: auto;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
   background-image: url("/images/mobile/image-header.jpg");
   background-size: cover;
   background-position: center;
@@ -28,8 +40,21 @@ img {
   width: 100vw;
 }
 
+.header__nav {
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .header-arrow {
   max-width: 36px;
+}
+
+.header .wrapper {
+  position: fixed;
+  top: 5;
+  right: 0;
+  padding-right: 1rem;
 }
 
 .header__nav-bar {
@@ -46,11 +71,23 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1rem;
+}
+
+.header__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .header__nav-menu {
   display: none;
+  background-color: white;
+  min-height: 40vh;
+  min-width: 90vw;
 }
 
 .header__nav-menu.active {
