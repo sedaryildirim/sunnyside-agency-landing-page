@@ -26,11 +26,21 @@
     height: 538px;
     width: 100vw;
 
+    &__nav-bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1rem;
+    }
     &-arrow {
       max-width: 36px;
     }
   }
 
+
+
+  
   .graphic-design {
     background-image: url('/images/mobile/image-graphic-design.jpg');
     background-size: cover;
